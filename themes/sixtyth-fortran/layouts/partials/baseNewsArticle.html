@@ -6,7 +6,7 @@
 {{- end -}}
 
 {{- partial "display-breadcrumbs.html" . -}}
-<h1>{{- .Title | safeHTML -}}</h1>
+<h1 data-pagefind-weight="10">{{- .Title | safeHTML -}}</h1>
 <div class="article-topBar">
   {{- if $article -}}
     <button class="article-button" data-target="section-article">Article</button>
@@ -26,7 +26,7 @@
       {{- partial "filename-to-photo-no-css.html" .Params.pageThumbnailFile -}}
     </div>
   {{- end -}}
-  <div style="width:auto; margin-left:6em; margin-right:6em; margin-top:1em; margin-bottom:1em;">
+  <div class="news-content">
     {{- .Content | safeHTML -}}
     {{- partial "display-citations.html" . -}}
   </div>
