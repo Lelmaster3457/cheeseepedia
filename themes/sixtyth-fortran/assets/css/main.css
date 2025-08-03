@@ -33,8 +33,13 @@
     display: none;
 }
 
-.transcription-content b {
+.linkerror {
+  color: var(--orange);
+}
+
+.transcription-content strong {
   color: var(--yellow);
+  line-height: 2em;
 }
 
 
